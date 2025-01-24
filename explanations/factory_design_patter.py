@@ -49,3 +49,5 @@ if __name__ == "__main__":
 
     coffee = machine.make_coffee("Cappuccino")
     print(coffee)  # Output: Preparing a frothy Cappuccino.
+
+#This code demonstrates the **Factory Design Pattern** using a coffee-making example. The `Coffee` interface defines a common blueprint for different coffee types, and specific types like `Espresso`, `Latte`, and `Cappuccino` implement it with their own `prepare` method. The `CoffeeMachine` acts as the factory, creating the desired coffee type based on a given string input (`coffee_type`). When the `make_coffee` method is called, it returns the preparation message for the specified coffee. This approach simplifies the creation process by encapsulating the logic of object creation in the factory, making it easy to add new coffee types in the future.
